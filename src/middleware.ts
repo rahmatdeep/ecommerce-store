@@ -20,7 +20,6 @@ async function isAuthenticated(req: NextRequest) {
     .toString()
     .split(":");
 
-  await isValidPassword(password, "asdasd");
 
   return (
     username === process.env.ADMIN_USERNAME &&
